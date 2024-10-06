@@ -405,211 +405,6 @@
         </div>
     </header>
 
-    <section
-        style="background-image: url('{{ asset('landing_page/images/banner-1.jpg') }}');background-repeat: no-repeat;background-size: cover;">
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-lg-6 pt-5 mt-5">
-                    <h2 class="display-1 ls-1"><span class="fw-bold text-primary">Restock</span> Foods at your <span
-                            class="fw-bold">Doorsteps</span></h2>
-                    <p class="fs-4">Dignissim massa diam elementum.</p>
-                    <div class="d-flex gap-3">
-                        <a href="{{ route('shop')}}"
-                            class="btn btn-primary text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Start Shopping</a>
-                    </div>
-                    <div class="row my-5">
-                        <div class="col">
-                            <div class="row text-dark">
-                                <div class="col-auto">
-                                    <p class="fs-1 fw-bold lh-sm mb-0">5k+</p>
-                                </div>
-                                <div class="col">
-                                    <p class="text-uppercase lh-sm mb-0">Product Varieties</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="row text-dark">
-                                <div class="col-auto">
-                                    <p class="fs-1 fw-bold lh-sm mb-0">10k+</p>
-                                </div>
-                                <div class="col">
-                                    <p class="text-uppercase lh-sm mb-0">Happy Customers</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="row text-dark">
-                                <div class="col-auto">
-                                    <p class="fs-1 fw-bold lh-sm mb-0">50+</p>
-                                </div>
-                                <div class="col">
-                                    <p class="text-uppercase lh-sm mb-0">Active DISTRIBUTORS</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-3 g-0 justify-content-center">
-                <div class="col">
-                    <div class="card border-0 bg-primary rounded-0 p-4 text-light">
-                        <div class="row">
-                            <div class="col-md-3 text-center">
-                                <svg width="60" height="60">
-                                    <use xlink:href="#fresh"></use>
-                                </svg>
-                            </div>
-                            <div class="col-md-9">
-                                <div class="card-body p-0">
-                                    <h5 class="text-light">Fresh from farm</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 bg-secondary rounded-0 p-4 text-light">
-                        <div class="row">
-                            <div class="col-md-3 text-center">
-                                <svg width="60" height="60">
-                                    <use xlink:href="#organic"></use>
-                                </svg>
-                            </div>
-                            <div class="col-md-9">
-                                <div class="card-body p-0">
-                                    <h5 class="text-light">100% Organic</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-0 bg-danger rounded-0 p-4 text-light">
-                        <div class="row">
-                            <div class="col-md-3 text-center">
-                                <svg width="60" height="60">
-                                    <use xlink:href="#delivery"></use>
-                                </svg>
-                            </div>
-                            <div class="col-md-9">
-                                <div class="card-body p-0">
-                                    <h5 class="text-light">Free delivery</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="py-3">
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="section-header d-flex flex-wrap justify-content-between my-4">
-                        <h2 class="section-title">About Us</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi obcaecati error maxime saepe
-                            veritatis fuga sunt accusamus quidem illo odio provident magnam cum ratione quisquam odit,
-                            illum quae esse numquam!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi obcaecati error maxime saepe
-                            veritatis fuga sunt accusamus quidem illo odio provident magnam cum ratione quisquam odit,
-                            illum quae esse numquam!
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi obcaecati error maxime saepe
-                            veritatis fuga sunt accusamus quidem illo odio provident magnam cum ratione quisquam odit,
-                            illum quae esse numquam!
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi obcaecati error maxime saepe
-                            veritatis fuga sunt accusamus quidem illo odio provident magnam cum ratione quisquam odit,
-                            illum quae esse numquam!
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="section-header d-flex flex-wrap justify-content-between my-4">
-                        <h2 class="section-title">Our Missions</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi obcaecati error maxime saepe
-                            veritatis fuga sunt accusamus quidem illo odio provident magnam cum ratione quisquam odit,
-                            illum quae esse numquam!
-                        </p>
-                        <h2 class="section-title">Our Vission</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi obcaecati error maxime saepe
-                            veritatis fuga sunt accusamus quidem illo odio provident magnam cum ratione quisquam odit,
-                            illum quae esse numquam!
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    {{-- <section class="py-5 overflow-hidden">
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="section-header d-flex flex-wrap justify-content-between mb-5">
-                        <h2 class="section-title">Category</h2>
-
-                        <div class="d-flex align-items-center">
-                            <a href="#" class="btn btn-primary me-2">View All</a>
-                            <div class="swiper-buttons">
-                                <button class="swiper-prev category-carousel-prev btn btn-yellow">❮</button>
-                                <button class="swiper-next category-carousel-next btn btn-yellow">❯</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="category-carousel swiper">
-                        <div class="swiper-wrapper">
-                            @php
-                                $categories = [
-                                    ['image' => 'category-thumb-1.jpg', 'title' => 'Fruits & Veges'],
-                                    ['image' => 'category-thumb-2.jpg', 'title' => 'Breads & Sweets'],
-                                    ['image' => 'category-thumb-3.jpg', 'title' => 'Fruits & Veges'],
-                                    ['image' => 'category-thumb-4.jpg', 'title' => 'Beverages'],
-                                    ['image' => 'category-thumb-5.jpg', 'title' => 'Meat Products'],
-                                    ['image' => 'category-thumb-6.jpg', 'title' => 'Breads'],
-                                    ['image' => 'category-thumb-7.jpg', 'title' => 'Fruits & Veges'],
-                                    ['image' => 'category-thumb-8.jpg', 'title' => 'Breads & Sweets'],
-                                    ['image' => 'category-thumb-1.jpg', 'title' => 'Fruits & Veges'],
-                                    ['image' => 'category-thumb-1.jpg', 'title' => 'Beverages'],
-                                    ['image' => 'category-thumb-1.jpg', 'title' => 'Meat Products'],
-                                    ['image' => 'category-thumb-1.jpg', 'title' => 'Breads'],
-                                ];
-                            @endphp
-
-                            @foreach ($categories as $category)
-                                <a href="category.html" class="nav-link swiper-slide text-center">
-                                    <img src="{{ asset('landing_page/images/' . $category['image']) }}"
-                                        class="rounded-circle" alt="Category Thumbnail">
-                                    <h4 class="fs-6 mt-3 fw-normal category-title">{{ $category['title'] }}</h4>
-                                </a>
-                            @endforeach
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section> --}}
 
     <section class="pb-5">
         <div class="container-lg">
@@ -619,211 +414,103 @@
 
                     <div class="section-header d-flex flex-wrap justify-content-between my-4">
 
-                        <h2 class="section-title">Best selling products</h2>
+                        <h2 class="section-title">Whole Wheat Sandwich Bread</h2>
                     </div>
 
-                </div>
-            </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="{{ asset('landing_page/images/product-thumb-1.png') }}"
+                                        alt="Product Thumbnail" style="width: 250px">
+                                </div>
 
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div
-                        class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5">
-
-                        <div class="col">
-                            <div class="product-item">
-                                <figure>
-                                    <a href="{{ route('display') }}" title="Product Title">
-                                        <img src="{{ asset('landing_page/images/product-thumb-1.png') }}"
-                                            alt="Product Thumbnail" class="tab-image">
-                                    </a>
-                                </figure>
-                                <div class="d-flex flex-column text-center">
-                                    <h3 class="fs-6 fw-normal">Whole Wheat Sandwich Bread</h3>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <del>$14.00</del>
-                                        <span class="text-dark fw-semibold">$12.00</span>
-                                    </div>
-                                    <div class="button-area p-3 pt-0">
-                                        <div class="row g-1 mt-2">
-                                            <div class="col"><a href="#"
-                                                    class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg
-                                                        width="18" height="18">
-                                                        <use xlink:href="#cart"></use>
-                                                    </svg> Order Now</a></div>
-
-                                        </div>
+                                <div class="col">
+                                    <div class="gap-2">
+                                        <p class="text-dark fw-semibold">&#8358; 1200.00</p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ea eaque. Totam
+                                            reiciendis voluptates temporibus quaerat debitis dolor ex, architecto
+                                            facilis repellat. Dolore in numquam consequatur pariatur ex provident modi?
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col">
-                            <div class="product-item">
-                                <figure>
-                                    <a href="{{ route('display') }}" title="Product Title">
-                                        <img src="{{ asset('landing_page/images/product-thumb-2.png') }}"
-                                            alt="Product Thumbnail" class="tab-image">
-                                    </a>
-                                </figure>
-                                <div class="d-flex flex-column text-center">
-                                    <h3 class="fs-6 fw-normal">Whole Grain Oatmeal</h3>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <del>$54.00</del>
-                                        <span class="text-dark fw-semibold">$50.00</span>
+                        <div class="col-md-7">
+                            <div class="card">
+                                <div class="card-body p-4">
+                                    <div class="section-header d-flex flex-wrap justify-content-between">
+                                        <h4 class="section-title">Make Purchase</h4>
                                     </div>
-                                    <div class="button-area p-3 pt-0">
-                                        <div class="row g-1 mt-2">
-                                            <div class="col"><a href="#"
-                                                    class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg
-                                                        width="18" height="18">
-                                                        <use xlink:href="#cart"></use>
-                                                    </svg> Order Now</a></div>
 
+                                    <form action="" method="post">
+                                        <div class="row">
+                                            <div class="my-2 col-md-4">
+                                                <label>Title</label>
+                                                <input type="text"
+                                                    class="form-control border border-dark form-control-lg"
+                                                    name="title" />
+                                            </div>
+                                            <div class="my-2 col-md-8">
+                                                <label>Fullname</label>
+                                                <input type="text"
+                                                    class="form-control border border-dark form-control-lg"
+                                                    name="fullname" />
+                                            </div>
+                                            <div class="my-2 col-md-6">
+                                                <label>Email Address</label>
+                                                <input type="text"
+                                                    class="form-control border border-dark form-control-lg"
+                                                    name="email" />
+                                            </div>
+                                            <div class="my-2 col-md-6">
+                                                <label>Mobile Number</label>
+                                                <input type="text"
+                                                    class="form-control border border-dark form-control-lg"
+                                                    name="mobile" />
+                                            </div>
+                                            <div class="col-md-12 my-2">
+                                                <hr>
+                                            </div>
+
+                                            <div class="my-2 col-md-2">
+                                                <label>Quantity</label>
+                                                <input type="number"
+                                                    class="form-control border border-dark form-control-lg"
+                                                    name="quanty" />
+                                            </div>
+                                            <div class="my-2 col-md-3">
+                                                <label>Price</label>
+                                                <input type="text"
+                                                    class="form-control border border-dark form-control-lg" readonly
+                                                    name="fullname" />
+                                            </div>
+                                            <div class="col-md-7 my-2">
+                                                <b>Note:</b>
+                                                <p style="font-size: 12px">
+                                                    Please make a bank transfer and send a screenshot of the transaction
+                                                    to this email address. Once your transfer is confirmed, you will
+                                                    receive a confirmation email containing your order confirmation
+                                                    code.</p>
+                                            </div>
+                                            <div class="col my-2">
+                                                <button type="submit"
+                                                    class="btn btn-primary  btn-lg">
+                                                    Confirm Order
+                                                </button>
+                                            </div>
                                         </div>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="product-item">
-                                <figure>
-                                    <a href="{{ route('display') }}" title="Product Title">
-                                        <img src="{{ asset('landing_page/images/product-thumb-3.png') }}"
-                                            alt="Product Thumbnail" class="tab-image">
-                                    </a>
-                                </figure>
-                                <div class="d-flex flex-column text-center">
-                                    <h3 class="fs-6 fw-normal">Sharp Cheddar Cheese Block</h3>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <del>$14.00</del>
-                                        <span class="text-dark fw-semibold">$12.00</span>
-                                    </div>
-                                    <div class="button-area p-3 pt-0">
-                                        <div class="row g-1 mt-2">
-                                            <div class="col"><a href="#"
-                                                    class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg
-                                                        width="18" height="18">
-                                                        <use xlink:href="#cart"></use>
-                                                    </svg> Order Now</a></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="product-item">
-                                <figure>
-                                    <a href="{{ route('display') }}" title="Product Title">
-                                        <img src="{{ asset('landing_page/images/product-thumb-4.png') }}"
-                                            alt="Product Thumbnail" class="tab-image">
-                                    </a>
-                                </figure>
-                                <div class="d-flex flex-column text-center">
-                                    <h3 class="fs-6 fw-normal">Organic Baby Spinach</h3>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <del>$14.00</del>
-                                        <span class="text-dark fw-semibold">$12.00</span>
-                                    </div>
-                                    <div class="button-area p-3 pt-0">
-                                        <div class="row g-1 mt-2">
-                                            <div class="col"><a href="#"
-                                                    class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg
-                                                        width="18" height="18">
-                                                        <use xlink:href="#cart"></use>
-                                                    </svg> Order Now</a></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="product-item">
-                                <figure>
-                                    <a href="{{ route('display') }}" title="Product Title">
-                                        <img src="{{ asset('landing_page/images/product-thumb-5.png') }}"
-                                            alt="Product Thumbnail" class="tab-image">
-                                    </a>
-                                </figure>
-                                <div class="d-flex flex-column text-center">
-                                    <h3 class="fs-6 fw-normal">Organic Spinach Leaves (Fresh Produce)</h3>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <del>$14.00</del>
-                                        <span class="text-dark fw-semibold">$12.00</span>
-                                    </div>
-                                    <div class="button-area p-3 pt-0">
-                                        <div class="row g-1 mt-2">
-                                            <div class="col"><a href="#"
-                                                    class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg
-                                                        width="18" height="18">
-                                                        <use xlink:href="#cart"></use>
-                                                    </svg> Order Now</a></div>
-
-                                        </div>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <!-- / product-grid -->
-
-
                 </div>
+
             </div>
         </div>
-    </section>
-
-    <section class="py-3">
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="banner-blocks">
-
-                        <div class="banner-ad d-flex align-items-center large bg-info block-1"
-                            style="background: url('{{ asset('landing_page/images/banner-ad-1.jpg') }}') no-repeat; background-size: cover;">
-                            <div class="banner-content p-5">
-                                <div class="content-wrapper text-light">
-                                    <h3 class="banner-title text-light">Items on SALE</h3>
-                                    <p>Discounts up to 30%</p>
-                                    <a href="#" class="btn-link text-white">Shop Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="banner-ad bg-success-subtle block-2"
-                            style="background:url('{{ asset('landing_page/images/banner-ad-2.jpg') }}') no-repeat;background-size: cover">
-                            <div class="banner-content align-items-center p-5">
-                                <div class="content-wrapper text-light">
-                                    <h3 class="banner-title text-light">Combo offers</h3>
-                                    <p>Discounts up to 50%</p>
-                                    <a href="#" class="btn-link text-white">Shop Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="banner-ad bg-danger block-3"
-                            style="background:url('{{ asset('landing_page/images/banner-ad-3.jpg') }}') no-repeat;background-size: cover">
-                            <div class="banner-content align-items-center p-5">
-                                <div class="content-wrapper text-light">
-                                    <h3 class="banner-title text-light">Discount Coupons</h3>
-                                    <p>Discounts up to 40%</p>
-                                    <a href="#" class="btn-link text-white">Shop Now</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- / Banner Blocks -->
-
-                </div>
-            </div>
         </div>
     </section>
 
@@ -843,78 +530,6 @@
             <a href="#" class="btn btn-warning me-2 mb-2">Chobani Greek Yogurt</a>
             <a href="#" class="btn btn-warning me-2 mb-2">Sweet Vanilla Yogurt</a>
             <a href="#" class="btn btn-warning me-2 mb-2">Chicken meatballs</a>
-        </div>
-    </section>
-
-    <section class="py-5">
-        <div class="container-lg">
-            <div class="row row-cols-1 row-cols-sm-3 row-cols-lg-5">
-                <div class="col">
-                    <div class="card mb-3 border border-dark-subtle p-3">
-                        <div class="text-dark mb-3">
-                            <svg width="32" height="32">
-                                <use xlink:href="#package"></use>
-                            </svg>
-                        </div>
-                        <div class="card-body p-0">
-                            <h5>Free delivery</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3 border border-dark-subtle p-3">
-                        <div class="text-dark mb-3">
-                            <svg width="32" height="32">
-                                <use xlink:href="#secure"></use>
-                            </svg>
-                        </div>
-                        <div class="card-body p-0">
-                            <h5>100% secure payment</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3 border border-dark-subtle p-3">
-                        <div class="text-dark mb-3">
-                            <svg width="32" height="32">
-                                <use xlink:href="#quality"></use>
-                            </svg>
-                        </div>
-                        <div class="card-body p-0">
-                            <h5>Quality guarantee</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3 border border-dark-subtle p-3">
-                        <div class="text-dark mb-3">
-                            <svg width="32" height="32">
-                                <use xlink:href="#savings"></use>
-                            </svg>
-                        </div>
-                        <div class="card-body p-0">
-                            <h5>guaranteed savings</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3 border border-dark-subtle p-3">
-                        <div class="text-dark mb-3">
-                            <svg width="32" height="32">
-                                <use xlink:href="#offers"></use>
-                            </svg>
-                        </div>
-                        <div class="card-body p-0">
-                            <h5>Daily offers</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
