@@ -322,7 +322,7 @@
             </symbol>
         </defs>
     </svg>
-
+    
     <header>
         <div class="container-fluid">
             <div class="row py-3 border-bottom">
@@ -330,39 +330,17 @@
                     class="col-sm-4 col-lg-2 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start">
                     <div class="d-flex align-items-center my-3 my-sm-0">
                         <a href="{{ route('home') }}">
-                            <img src="{{ asset('landing_page/images/logo.png') }}" alt="logo"
-                                style="width: 157px;; position: absolute; top: -50px;">
+                            <img src="{{ asset('landing_page/images/200.png') }}" alt="logo" width="50px" />
+                            {{-- Restock4Less --}}
                         </a>
                     </div>
                 </div>
 
                 <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-4">
-                    <div class="search-bar row bg-light p-2 rounded-4">
-                        <div class="col-md-4 d-none d-md-block">
-                            <select class="form-select border-0 bg-transparent">
-                                <option>All Categories</option>
-                                <option>Groceries</option>
-                                <option>Drinks</option>
-                                <option>Chocolates</option>
-                            </select>
-                        </div>
-                        <div class="col-11 col-md-7">
-                            <form id="search-form" class="text-center" action="{{ route('home') }}" method="post">
-                                <input type="text" class="form-control border-0 bg-transparent"
-                                    placeholder="Search for more than 20,000 products">
-                            </form>
-                        </div>
-                        <div class="col-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
-                            </svg>
-                        </div>
-                    </div>
+
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-6">
                     <ul
                         class="navbar-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center mb-0 fw-bold text-uppercase text-dark">
                         <li class="nav-item active">
@@ -372,7 +350,7 @@
                             <a href="{{ route('home') }}" class="nav-link">About Us</a>
                         </li>
                         <li class="nav-item active">
-                            <a href="{{ route('shop') }}" class="nav-link">Shop Now</a>
+                            <a href="{{ route('shop') }}" class="nav-link">Browse Shop</a>
                         </li>
                         <li class="nav-item active">
                             <a href="{{ route('home') }}" class="nav-link">Contact Us</a>
@@ -380,87 +358,9 @@
                     </ul>
                 </div>
 
-                <div
-                    class="col-sm-8 col-lg-2 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end">
-                    <ul class="d-flex justify-content-end list-unstyled m-0">
-                        <li>
-                            <a href="#" class="p-2 mx-1">
-                                <svg width="24" height="24">
-                                    <use xlink:href="#user"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        {{-- <li>
-                            <a href="#" class="p-2 mx-1" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                                <svg width="24" height="24">
-                                    <use xlink:href="#shopping-bag"></use>
-                                </svg>
-                            </a>
-                        </li> --}}
-                    </ul>
-                </div>
-
             </div>
         </div>
     </header>
-
-    {{-- <section class="py-5 overflow-hidden">
-        <div class="container-lg">
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="section-header d-flex flex-wrap justify-content-between mb-5">
-                        <h2 class="section-title">Category</h2>
-
-                        <div class="d-flex align-items-center">
-                            <a href="#" class="btn btn-primary me-2">View All</a>
-                            <div class="swiper-buttons">
-                                <button class="swiper-prev category-carousel-prev btn btn-yellow">❮</button>
-                                <button class="swiper-next category-carousel-next btn btn-yellow">❯</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-
-                    <div class="category-carousel swiper">
-                        <div class="swiper-wrapper">
-                            @php
-                                $categories = [
-                                    ['image' => 'category-thumb-1.jpg', 'title' => 'Fruits & Veges'],
-                                    ['image' => 'category-thumb-2.jpg', 'title' => 'Breads & Sweets'],
-                                    ['image' => 'category-thumb-3.jpg', 'title' => 'Fruits & Veges'],
-                                    ['image' => 'category-thumb-4.jpg', 'title' => 'Beverages'],
-                                    ['image' => 'category-thumb-5.jpg', 'title' => 'Meat Products'],
-                                    ['image' => 'category-thumb-6.jpg', 'title' => 'Breads'],
-                                    ['image' => 'category-thumb-7.jpg', 'title' => 'Fruits & Veges'],
-                                    ['image' => 'category-thumb-8.jpg', 'title' => 'Breads & Sweets'],
-                                    ['image' => 'category-thumb-1.jpg', 'title' => 'Fruits & Veges'],
-                                    ['image' => 'category-thumb-1.jpg', 'title' => 'Beverages'],
-                                    ['image' => 'category-thumb-1.jpg', 'title' => 'Meat Products'],
-                                    ['image' => 'category-thumb-1.jpg', 'title' => 'Breads'],
-                                ];
-                            @endphp
-
-                            @foreach ($categories as $category)
-                                <a href="category.html" class="nav-link swiper-slide text-center">
-                                    <img src="{{ asset('landing_page/images/' . $category['image']) }}"
-                                        class="rounded-circle" alt="Category Thumbnail">
-                                    <h4 class="fs-6 mt-3 fw-normal category-title">{{ $category['title'] }}</h4>
-                                </a>
-                            @endforeach
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section> --}}
 
     <section class="pb-5">
         <div class="container-lg">
