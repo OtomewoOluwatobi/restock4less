@@ -12,6 +12,8 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
 
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('landing_page/images/200.png') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -987,7 +989,8 @@
     </div>
 
     <!-- Create a modal container to hold the video -->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true"
+        data-bs-backdrop="static" data-bs-keyboard="false">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -995,7 +998,8 @@
                 </div>
                 <div class="modal-body">
                     <div class="ratio ratio-16x9">
-                        <iframe width="100%" height="100%" src="{{ asset('landing_page/images/video.mp4') }}" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="{{ asset('landing_page/images/video.mp4') }}"
+                            frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -1010,9 +1014,9 @@
     <script src="{{ asset('landing_page/js/plugins.js') }}"></script>
     <script src="{{ asset('landing_page/js/script.js') }}"></script>
     <script>
-         $(window).on('load', function() {
-        $('#videoModal').modal('show');
-    });
+        $(window).on('load', function() {
+            $('#videoModal').modal('show');
+        });
     </script>
 </body>
 

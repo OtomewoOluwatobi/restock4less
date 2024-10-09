@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('landing_page/images/200.png') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -22,27 +24,28 @@
                             <!-- Product Name -->
                             <div class="form-group my-2">
                                 <label for="product_name">Product Name:</label>
-                                <input type="text" class="form-control" id="product_name" name="product_name" required>
+                                <input type="text" class="form-control" id="product_name" name="product_name"
+                                    required>
                             </div>
-                        
+
                             <!-- Price -->
                             <div class="form-group my-2">
                                 <label for="price">Price:</label>
                                 <input type="number" class="form-control" id="price" name="price" required>
                             </div>
-                        
+
                             <!-- Image Upload -->
                             <div class="form-group my-2">
                                 <label for="image_url">Image:</label>
                                 <input type="file" class="form-control" id="image_url" name="image_url" required>
                             </div>
-                        
+
                             <!-- Description -->
                             <div class="form-group my-2">
                                 <label for="description">Description:</label>
                                 <textarea id="description" class="form-control" name="description" required></textarea>
                             </div>
-                        
+
                             <!-- Submit Button -->
                             <button type="submit" class="btn btn-success">Create Product</button>
                         </form>
@@ -69,7 +72,8 @@
                                 @foreach ($allProduct as $product)
                                     <tr>
                                         <td>{{ $product->id }}</td>
-                                        <td><img src="{{ Storage::url($product->image_url) }}" alt="Product Image" width="100"></td>
+                                        <td><img src="{{ Storage::url($product->image_url) }}" alt="Product Image"
+                                                width="100"></td>
                                         <td>{{ $product->name }}</td>
                                         <td>{{ $product->price }}</td>
                                         <td>{{ $product->description }}</td>
