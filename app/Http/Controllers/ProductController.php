@@ -33,31 +33,33 @@ class ProductController extends Controller
     // In your ProductController.php
     public function store(Request $req)
     {
+        // Validate the request inputs
         $req->validate([
             'product_name' => 'required|string|max:255',
             'price' => 'required|numeric',
             'image_url' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
-            'discription' => 'required|string',
+            'description' => 'required|string',
         ]);
-
+    
         $productData = [
-            'name' => $req->product_name,
-            'price' => $req->price,
-            'discription' => $req->input('discription'),
+            'name' => $req->input('product_name'),
+            'price' => $req->input('price'),
+            'description' => $req->input('description'),
         ];
-
+    
         if ($req->hasFile('image_url')) {
             $image = $req->file('image_url');
-            $imageName = time() . '.' . $image->getClientOriginalExtension();
-            $image->move(public_path('landing_page/images'), $imageName);
-            $productData['image_url'] = $imageName;
+            $imagePath = $image->store('products', 'public');  // Store image in storage/app/public/products
+            $productData['image_url'] = $imagePath;
         }
-
+    
         Product::create($productData);
-
+    
         return redirect()->back()->with('success', 'Product created successfully!');
     }
-
+    
+    
+    
 
     /**
      * Display the specified resource.

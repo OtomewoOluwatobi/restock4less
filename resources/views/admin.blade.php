@@ -17,31 +17,34 @@
                     <div class="card-body">
                         <h5 class="card-title">Add New Item</h5>
                         <!-- Assuming you're using Laravel's Blade templating engine -->
-
                         <form method="POST" action="{{ route('products.store') }}" enctype="multipart/form-data">
                             @csrf
-                            <!-- Form fields -->
+                            <!-- Product Name -->
                             <div class="form-group my-2">
                                 <label for="product_name">Product Name:</label>
                                 <input type="text" class="form-control" id="product_name" name="product_name" required>
                             </div>
-
+                        
+                            <!-- Price -->
                             <div class="form-group my-2">
                                 <label for="price">Price:</label>
                                 <input type="number" class="form-control" id="price" name="price" required>
                             </div>
-
+                        
+                            <!-- Image Upload -->
                             <div class="form-group my-2">
                                 <label for="image_url">Image:</label>
                                 <input type="file" class="form-control" id="image_url" name="image_url" required>
                             </div>
-
+                        
+                            <!-- Description -->
                             <div class="form-group my-2">
-                                <label for="discription">Description:</label>
-                                <textarea id="discription" class="form-control" name="discription" required></textarea>
+                                <label for="description">Description:</label>
+                                <textarea id="description" class="form-control" name="description" required></textarea>
                             </div>
-
-                            <button type="submit" name=submit class="btn btn-success">Create Product</button>
+                        
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-success">Create Product</button>
                         </form>
                     </div>
                 </div>
@@ -66,8 +69,7 @@
                                 @foreach ($allProduct as $product)
                                     <tr>
                                         <td>{{ $product->id }}</td>
-                                        <td><img src="{{ asset('path/to/image/' . $product->image_url) }}"
-                                                alt="Product Image"></td>
+                                        <td><img src="{{ Storage::url($product->image_url) }}" alt="Product Image" width="100"></td>
                                         <td>{{ $product->name }}</td>
                                         <td>{{ $product->price }}</td>
                                         <td>{{ $product->discription }}</td>
