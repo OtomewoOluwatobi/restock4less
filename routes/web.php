@@ -3,9 +3,7 @@
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('index');
-})->name('home');
+Route::get('/', [ProductController::class, 'five_random_products'])->name('home');
 
 Route::get('/shop', function () {
     return view('shop');

@@ -19,6 +19,13 @@ class ProductController extends Controller
         return View('admin', compact('allProduct'));
     }
 
+
+    public function five_random_products()
+    {
+        $fewProducts = Product::where('is_hidden', false)->limit(5)->get();
+        return View('index', compact('fewProducts'));
+    }
+
     /**
      * Show the form for creating a new resource.
      */
