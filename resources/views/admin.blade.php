@@ -60,7 +60,7 @@
                                     <th>Image</th>
                                     <th>Product</th>
                                     <th>Price</th>
-                                    <th>Discription</th>
+                                    <th>Description</th>
                                     <th>Actions</th>
                                 </tr>
                             </thead>
@@ -72,7 +72,7 @@
                                         <td><img src="{{ Storage::url($product->image_url) }}" alt="Product Image" width="100"></td>
                                         <td>{{ $product->name }}</td>
                                         <td>{{ $product->price }}</td>
-                                        <td>{{ $product->discription }}</td>
+                                        <td>{{ $product->description }}</td>
                                         <td>
                                             <!-- Actions buttons (e.g. edit, delete) -->
                                         </td>
