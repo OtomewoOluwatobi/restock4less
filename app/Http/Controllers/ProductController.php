@@ -40,26 +40,28 @@ class ProductController extends Controller
             'image_url' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
             'description' => 'required|string',
         ]);
-    
+
+        dd($req);
+
         $productData = [
             'name' => $req->input('product_name'),
             'price' => $req->input('price'),
             'description' => $req->input('description'),
         ];
-    
+
         if ($req->hasFile('image_url')) {
             $image = $req->file('image_url');
             $imagePath = $image->store('products', 'public');  // Store image in storage/app/public/products
             $productData['image_url'] = $imagePath;
         }
-    
+
         Product::create($productData);
-    
+
         return redirect()->back()->with('success', 'Product created successfully!');
     }
-    
-    
-    
+
+
+
 
     /**
      * Display the specified resource.

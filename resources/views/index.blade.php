@@ -367,11 +367,11 @@
         <div class="container-lg">
             <div class="row">
                 <div class="col-lg-6 pt-5 mt-5">
-                    <h2 class="display-1 ls-1"><span class="fw-bold text-primary">Restock</span> for Less <span
+                    <h2 class="display-1 ls-1"><span class="fw-bold text-primary">Restock</span> 4 Less <span
                             class="fw-bold text-danger">Gives</span> You</h2>
                     <p class="fs-4">Affordable consumable products.</p>
                     <div class="d-flex gap-3">
-                        <a href="{{ route('shop')}}"
+                        <a href="{{ route('shop') }}"
                             class="btn btn-primary text-uppercase fs-6 rounded-pill px-4 py-3 mt-3">Start Shopping</a>
                     </div>
                     <div class="row my-5">
@@ -466,7 +466,7 @@
         </div>
     </section>
 
-    <section class="py-3">
+    {{-- <section class="py-3">
         <div class="container-lg">
             <div class="row">
                 <div class="col-md-8">
@@ -509,7 +509,7 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
 
     {{-- <section class="py-5 overflow-hidden">
         <div class="container-lg">
@@ -985,6 +985,23 @@
             </div>
         </div>
     </div>
+
+    <!-- Create a modal container to hold the video -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="100%" height="100%" src="{{ asset('landing_page/images/video.mp4') }}" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="{{ asset('landing_page/js/jquery-1.11.0.min.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -992,6 +1009,11 @@
     </script>
     <script src="{{ asset('landing_page/js/plugins.js') }}"></script>
     <script src="{{ asset('landing_page/js/script.js') }}"></script>
+    <script>
+         $(window).on('load', function() {
+        $('#videoModal').modal('show');
+    });
+    </script>
 </body>
 
 </html>
