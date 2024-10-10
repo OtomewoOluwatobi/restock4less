@@ -39,9 +39,9 @@
                                 <label for="price">Price:</label>
                                 <input type="number" class="form-control" id="price" name="price"
                                     value="{{ $product->price ?? '' }}" required>
-                                    @if ($errors->has('price'))
-                                        <span class="error">{{ $errors->first('price') }}</span>
-                                    @endif
+                                @if ($errors->has('price'))
+                                    <span class="error">{{ $errors->first('price') }}</span>
+                                @endif
                             </div>
 
                             <!-- Image Upload -->
@@ -67,7 +67,13 @@
                             </div>
 
                             <!-- Submit Button -->
-                            <button type="submit" class="btn btn-success">Create Product</button>
+                            <button type="submit"
+                                class="btn btn-success">{{ isset($product) ? 'Update Product' : 'Create Product' }}</button>
+                            <div>
+                                @if (isset($product))
+                                    <a href="{{ route('admin') }}">Create New</a>
+                                @endif
+                            </div>
                         </form>
                     </div>
 
@@ -101,7 +107,7 @@
                                         </td>
                                         <td>{{ $product->name }}</td>
                                         <td>{{ $product->price }}</td>
-                                        <td>{{ Str::substr($product->description, 0, 25) }} ...</td>
+                                        <td>{{ Str::substr($product->description, 0, 35) }} ...</td>
                                         <td class="text-left">
                                             <div class="btn-group" role="group" aria-label="Basic example">
                                                 <a href="{{ route('products.activate', ['id' => $product->id]) }}"
@@ -113,7 +119,6 @@
                                             </div>
                                             <a href="{{ route('products.edit', ['id' => $product->id]) }}"
                                                 class="btn btn-info">Edit</a>
-                                            <button type="button" class="btn btn-danger">Delete</button>
                                         </td>
                                     </tr>
                                 @endforeach

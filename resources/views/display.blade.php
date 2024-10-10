@@ -378,21 +378,21 @@
                     <div class="row">
                         <div class="col-md-5">
                             <div class="row">
-                                <div class="col">
-                                    <img src="{{ asset('landing_page/images/product-thumb-1.png') }}"
-                                        alt="Product Thumbnail" style="width: 250px">
-                                </div>
-
-                                <div class="col">
-                                    <div class="gap-2">
-                                        <p class="text-dark fw-semibold">&#8358; 1200.00</p>
-                                        <p>
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, ea eaque. Totam
-                                            reiciendis voluptates temporibus quaerat debitis dolor ex, architecto
-                                            facilis repellat. Dolore in numquam consequatur pariatur ex provident modi?
-                                        </p>
+                                @if (isset($product))
+                                    <div class="col">
+                                        <img src="{{ Storage::url($product->image_url) }}"
+                                            alt="Product Thumbnail" style="width: 250px">
                                     </div>
-                                </div>
+
+                                    <div class="col">
+                                        <div class="gap-2">
+                                            <p class="text-dark fw-semibold">&#8358; {{ $product->price }}</p>
+                                            <p>
+                                                {{ $product->description }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                @endif
                             </div>
                         </div>
 

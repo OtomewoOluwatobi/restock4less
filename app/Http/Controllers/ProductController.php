@@ -15,10 +15,21 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $allProduct = Product::paginate(10);
+        $allProduct = Product::get();
         return View('admin', compact('allProduct'));
     }
 
+    public function shop_index()
+    {
+        $allProduct = Product::get();
+        return View('shop', compact('allProduct'));
+    }
+
+    public function shop_show($id)
+    {
+        $product = Product::findOrFail($id);
+        return View('display', compact('product', 'product'));
+    }
 
     public function five_random_products()
     {

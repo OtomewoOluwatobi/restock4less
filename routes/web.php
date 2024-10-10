@@ -5,13 +5,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ProductController::class, 'five_random_products'])->name('home');
 
-Route::get('/shop', function () {
-    return view('shop');
-})->name('shop');
+Route::get('/shop',  [ProductController::class, 'shop_index'])->name('shop');
 
-Route::get('/shop/display', function () {
-    return view('display');
-})->name('display');
+Route::get('/shop/display/{id}', [ProductController::class, 'shop_show'])->name('display');
 
 Route::get('/001', [ProductController::class, 'index'])->name('admin');
 Route::get('/001/{id}', [ProductController::class, 'edit'])->name('products.edit');

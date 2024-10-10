@@ -384,145 +384,37 @@
                     <div
                         class="product-grid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5">
 
-                        <div class="col">
-                            <div class="product-item">
-                                <figure>
-                                    <a href="{{ route('display') }}" title="Product Title">
-                                        <img src="{{ asset('landing_page/images/product-thumb-1.png') }}"
-                                            alt="Product Thumbnail" class="tab-image">
-                                    </a>
-                                </figure>
-                                <div class="d-flex flex-column text-center">
-                                    <h3 class="fs-6 fw-normal">Whole Wheat Sandwich Bread</h3>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <del>$14.00</del>
-                                        <span class="text-dark fw-semibold">$12.00</span>
-                                    </div>
-                                    <div class="button-area p-3 pt-0">
-                                        <div class="row g-1 mt-2">
-                                            <div class="col"><a href="{{ route('display') }}"
-                                                    class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg
-                                                        width="18" height="18">
-                                                        <use xlink:href="#cart"></use>
-                                                    </svg> Order Now</a></div>
-
+                        @foreach ($allProduct as $product)
+                            <div class="col">
+                                <div class="product-item">
+                                    <figure>
+                                        <a href="{{ route('display', $product->id) }}" title="Product Title">
+                                            <img src="{{ Storage::url($product->image_url) }}"
+                                                alt="Product Thumbnail" class="tab-image">
+                                        </a>
+                                    </figure>
+                                    <div class="d-flex flex-column text-center">
+                                        <h3 class="fs-6 fw-normal">{{ $product->name }}</h3>
+                                        <div class="price-info d-flex justify-content-center align-items-center gap-2">
+                                            <span class="text-dark fw-semibold">&#8358; {{ $product->price }}</span>
+                                        </div>
+                                        <div class="button-area p-3 pt-0">
+                                            <div class="row g-1 mt-2">
+                                                <div class="col">
+                                                    <a href="{{ route('display', $product->id) }}"
+                                                        class="btn btn-primary rounded-1 p-2 fs-7 btn-cart">
+                                                        <svg width="18" height="18">
+                                                            <use xlink:href="#cart"></use>
+                                                        </svg>
+                                                        Order Now
+                                                    </a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="product-item">
-                                <figure>
-                                    <a href="{{ route('display') }}" title="Product Title">
-                                        <img src="{{ asset('landing_page/images/product-thumb-2.png') }}"
-                                            alt="Product Thumbnail" class="tab-image">
-                                    </a>
-                                </figure>
-                                <div class="d-flex flex-column text-center">
-                                    <h3 class="fs-6 fw-normal">Whole Grain Oatmeal</h3>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <del>$54.00</del>
-                                        <span class="text-dark fw-semibold">$50.00</span>
-                                    </div>
-                                    <div class="button-area p-3 pt-0">
-                                        <div class="row g-1 mt-2">
-                                            <div class="col"><a href="{{ route('display') }}"
-                                                    class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg
-                                                        width="18" height="18">
-                                                        <use xlink:href="#cart"></use>
-                                                    </svg> Order Now</a></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="product-item">
-                                <figure>
-                                    <a href="{{ route('display') }}" title="Product Title">
-                                        <img src="{{ asset('landing_page/images/product-thumb-3.png') }}"
-                                            alt="Product Thumbnail" class="tab-image">
-                                    </a>
-                                </figure>
-                                <div class="d-flex flex-column text-center">
-                                    <h3 class="fs-6 fw-normal">Sharp Cheddar Cheese Block</h3>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <del>$14.00</del>
-                                        <span class="text-dark fw-semibold">$12.00</span>
-                                    </div>
-                                    <div class="button-area p-3 pt-0">
-                                        <div class="row g-1 mt-2">
-                                            <div class="col"><a href="{{ route('display') }}"
-                                                    class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg
-                                                        width="18" height="18">
-                                                        <use xlink:href="#cart"></use>
-                                                    </svg> Order Now</a></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="product-item">
-                                <figure>
-                                    <a href="{{ route('display') }}" title="Product Title">
-                                        <img src="{{ asset('landing_page/images/product-thumb-4.png') }}"
-                                            alt="Product Thumbnail" class="tab-image">
-                                    </a>
-                                </figure>
-                                <div class="d-flex flex-column text-center">
-                                    <h3 class="fs-6 fw-normal">Organic Baby Spinach</h3>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <del>$14.00</del>
-                                        <span class="text-dark fw-semibold">$12.00</span>
-                                    </div>
-                                    <div class="button-area p-3 pt-0">
-                                        <div class="row g-1 mt-2">
-                                            <div class="col"><a href="{{ route('display') }}"
-                                                    class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg
-                                                        width="18" height="18">
-                                                        <use xlink:href="#cart"></use>
-                                                    </svg> Order Now</a></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="product-item">
-                                <figure>
-                                    <a href="{{ route('display') }}" title="Product Title">
-                                        <img src="{{ asset('landing_page/images/product-thumb-5.png') }}"
-                                            alt="Product Thumbnail" class="tab-image">
-                                    </a>
-                                </figure>
-                                <div class="d-flex flex-column text-center">
-                                    <h3 class="fs-6 fw-normal">Organic Spinach Leaves (Fresh Produce)</h3>
-                                    <div class="d-flex justify-content-center align-items-center gap-2">
-                                        <del>$14.00</del>
-                                        <span class="text-dark fw-semibold">$12.00</span>
-                                    </div>
-                                    <div class="button-area p-3 pt-0">
-                                        <div class="row g-1 mt-2">
-                                            <div class="col"><a href="{{ route('display') }}"
-                                                    class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"><svg
-                                                        width="18" height="18">
-                                                        <use xlink:href="#cart"></use>
-                                                    </svg> Order Now</a></div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                     <!-- / product-grid -->
 

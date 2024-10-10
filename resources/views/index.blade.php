@@ -607,7 +607,7 @@
                                         <div class="button-area p-3 pt-0">
                                             <div class="row g-1 mt-2">
                                                 <div class="col">
-                                                    <a href="#"
+                                                    <a href="{{ route('display', $product->id) }}"
                                                         class="btn btn-primary rounded-1 p-2 fs-7 btn-cart">
                                                         <svg width="18" height="18">
                                                             <use xlink:href="#cart"></use>
