@@ -66,11 +66,13 @@ class ProductController extends Controller
         return redirect()->back()->with('success', 'Product created successfully!');
     }
 
-    function activate_product($id){
+    function activate_product($id)
+    {
         Product::findOrFail($id)->update(['is_hidden' => false]);
         return back()->with('success', 'Product has been activated!');
     }
-    function deactivate_product($id){
+    function deactivate_product($id)
+    {
         Product::findOrFail($id)->update(['is_hidden' => true]);
         return back()->with('success', 'Product has been deactivated!');
     }
@@ -90,15 +92,33 @@ class ProductController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $allProduct = Product::paginate(10);
+        $product = Product::findOrFail($id);
+        return View('admin', compact('product', 'allProduct'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $req, $id)
     {
-        //
+        // Validate the request inputs
+        $productData = [
+            'name' => $req->input('product_name'),
+            'price' => $req->input('price'),
+            'description' => $req->input('description'),
+            'is_hidden' => false,
+        ];
+
+        if ($req->hasFile('image_url')) {
+            $image = $req->file('image_url');
+            $imagePath = $image->store('products', 'public');  // Store image in storage/app/public/products
+            $productData['image_url'] = $imagePath;
+        }
+
+        Product::create($productData);
+
+        return redirect()->back()->with('success', 'Product created successfully!');
     }
 
     /**
