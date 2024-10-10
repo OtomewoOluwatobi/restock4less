@@ -52,7 +52,7 @@ class ProductController extends Controller
             'name' => $req->input('product_name'),
             'price' => $req->input('price'),
             'description' => $req->input('description'),
-            'is_hidden' => true
+            'is_hidden' => false,
         ];
 
         if ($req->hasFile('image_url')) {
