@@ -73,12 +73,17 @@
                                     <tr>
                                         <td>{{ $product->id }}</td>
                                         <td><img src="{{ Storage::url($product->image_url) }}" alt="Product Image"
-                                                width="100"></td>
+                                                style="width: 80px; height: 90px;" /></td>
                                         <td>{{ $product->name }}</td>
                                         <td>{{ $product->price }}</td>
                                         <td>{{ $product->description }}</td>
                                         <td>
-                                            <!-- Actions buttons (e.g. edit, delete) -->
+                                            <div class="btn-group" role="group" aria-label="Basic example">
+                                                <button type="button" class="btn btn-success">Activate</button>
+                                                <button type="button" class="btn btn-warning">Deactivate</button>
+                                            </div>
+                                            <button type="button" class="btn btn-info">Edit</button>
+                                            <button type="button" class="btn btn-danger">Delete</button>
                                         </td>
                                     </tr>
                                 @endforeach
