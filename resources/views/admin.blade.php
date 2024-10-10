@@ -72,15 +72,20 @@
                                 @foreach ($allProduct as $product)
                                     <tr>
                                         <td>{{ $product->id }}</td>
-                                        <td><img src="{{ Storage::url($product->image_url) }}" alt="Product Image"
-                                                style="width: 80px; height: 90px;" /></td>
+                                        <td>
+                                            <a href="{{ Storage::url($product->image_url) }}">
+                                                <img src="{{ Storage::url($product->image_url) }}" alt="Product Image"
+                                                    style="width: 40px; height: 50px;" />
+                                            </a>
+                                        </td>
                                         <td>{{ $product->name }}</td>
                                         <td>{{ $product->price }}</td>
                                         <td>{{ $product->description }}</td>
-                                        <td>
+                                        <td class="text-right">
                                             <div class="btn-group" role="group" aria-label="Basic example">
                                                 <button type="button" class="btn btn-success">Activate</button>
-                                                <button type="button" class="btn btn-warning">Deactivate</button>
+                                                <button type="button" class="btn btn-warning"
+                                                    disabled>Deactivate</button>
                                             </div>
                                             <button type="button" class="btn btn-info">Edit</button>
                                             <button type="button" class="btn btn-danger">Delete</button>
