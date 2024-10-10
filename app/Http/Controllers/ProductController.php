@@ -48,8 +48,6 @@ class ProductController extends Controller
             'description' => 'required|string',
         ]);
 
-        dd($req);
-
         $productData = [
             'name' => $req->input('product_name'),
             'price' => $req->input('price'),
