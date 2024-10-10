@@ -80,7 +80,7 @@
                                         </td>
                                         <td>{{ $product->name }}</td>
                                         <td>{{ $product->price }}</td>
-                                        <td>{{ $product->description }}</td>
+                                        <td>{{Str::substr( $product->description, 0, 25) }} ...</td>
                                         <td class="text-left">
                                             <div class="btn-group" role="group" aria-label="Basic example">
                                                 <a href="{{ route('products.activate', ['id'=>$product->id]) }}" class="btn btn-success" {{ $product->is_hidden ? '' : 'disabled' }}>Activate</a>
