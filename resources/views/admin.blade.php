@@ -21,7 +21,7 @@
                         <h5 class="card-title">Add New Item</h5>
                         <!-- Assuming you're using Laravel's Blade templating engine -->
                         <form method="POST"
-                            action="{{ $product ? route('products.update', ['id' => $product->id]) : route('products.store') }}"
+                            action="{{ isset($product) ? route('products.update', ['id' => $product->id]) : route('products.store') }}"
                             enctype="multipart/form-data">
                             @csrf
                             <!-- Product Name -->

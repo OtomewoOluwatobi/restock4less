@@ -102,7 +102,16 @@ class ProductController extends Controller
      */
     public function update(Request $req, $id)
     {
+        $product = Product::findOrFail($id);
+
         // Validate the request inputs
+        $req->validate([
+            'product_name' => 'required|string|max:255',
+            'price' => 'required|numeric',
+            'image_url' => 'image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+            'description' => 'required|string',
+        ]);
+
         $productData = [
             'name' => $req->input('product_name'),
             'price' => $req->input('price'),
@@ -112,13 +121,14 @@ class ProductController extends Controller
 
         if ($req->hasFile('image_url')) {
             $image = $req->file('image_url');
-            $imagePath = $image->store('products', 'public');  // Store image in storage/app/public/products
+            $oldImagePath = $product->image_url;
+            $imagePath = $image->storeAs('products', $oldImagePath, 'public');  // Rename the new file to the old one's name
             $productData['image_url'] = $imagePath;
         }
 
-        Product::create($productData);
+        $product->update($productData);
 
-        return redirect()->back()->with('success', 'Product created successfully!');
+        return redirect()->back()->with('success', 'Product updated successfully!');
     }
 
     /**
