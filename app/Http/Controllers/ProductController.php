@@ -52,6 +52,7 @@ class ProductController extends Controller
             'name' => $req->input('product_name'),
             'price' => $req->input('price'),
             'description' => $req->input('description'),
+            'is_hidden' => true
         ];
 
         if ($req->hasFile('image_url')) {
@@ -65,6 +66,14 @@ class ProductController extends Controller
         return redirect()->back()->with('success', 'Product created successfully!');
     }
 
+    function activate_product($id){
+        Product::findOrFail($id)->update(['is_hidden' => false]);
+        return back()->with('success', 'Product has been activated!');
+    }
+    function deactivate_product($id){
+        Product::findOrFail($id)->update(['is_hidden' => true]);
+        return back()->with('success', 'Product has been deactivated!');
+    }
 
 
 

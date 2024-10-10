@@ -14,6 +14,7 @@ Route::get('/shop/display', function () {
 })->name('display');
 
 Route::get('/001', [ProductController::class, 'index'])->name('admin');
-// Define a route that calls the store function
 Route::post('/products', [ProductController::class, 'store'])->name('products.store');
+Route::get('/products/activate/{id}', [ProductController::class, 'activate_product'])->name('products.activate');
+Route::get('/products/deactivate/{id}', [ProductController::class, 'deactivate_product'])->name('products.deactivate');
 

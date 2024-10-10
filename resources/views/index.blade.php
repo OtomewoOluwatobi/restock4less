@@ -602,7 +602,7 @@
                                     <div class="d-flex flex-column text-center">
                                         <h3 class="fs-6 fw-normal">{{ $product->name }}</h3>
                                         <div class="price-info d-flex justify-content-center align-items-center gap-2">
-                                            <span class="text-dark fw-semibold">&#3858; {{ $product->price }}</span>
+                                            <span class="text-dark fw-semibold">&#8358; {{ $product->price }}</span>
                                         </div>
                                         <div class="button-area p-3 pt-0">
                                             <div class="row g-1 mt-2">

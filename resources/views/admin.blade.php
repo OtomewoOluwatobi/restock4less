@@ -83,9 +83,8 @@
                                         <td>{{ $product->description }}</td>
                                         <td class="text-left">
                                             <div class="btn-group" role="group" aria-label="Basic example">
-                                                <button type="button" class="btn btn-success">Activate</button>
-                                                <button type="button" class="btn btn-warning"
-                                                    disabled>Deactivate</button>
+                                                <a href="{{ route('products.activate', ['id'=>$product->id]) }}" class="btn btn-success" {{ $product->is_hidden ? '' : 'disabled' }}>Activate</a>
+                                                <a href="{{ route('products.deactivate', ['id'=>$product->id]) }}" class="btn btn-warning" {{ $product->is_hidden ? 'disabled' : '' }} >Deactivate</a>
                                             </div>
                                             <button type="button" class="btn btn-info">Edit</button>
                                             <button type="button" class="btn btn-danger">Delete</button>
