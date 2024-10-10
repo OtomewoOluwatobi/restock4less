@@ -81,7 +81,7 @@
                                         <td>{{ $product->name }}</td>
                                         <td>{{ $product->price }}</td>
                                         <td>{{ $product->description }}</td>
-                                        <td class="text-right">
+                                        <td class="text-left">
                                             <div class="btn-group" role="group" aria-label="Basic example">
                                                 <button type="button" class="btn btn-success">Activate</button>
                                                 <button type="button" class="btn btn-warning"
