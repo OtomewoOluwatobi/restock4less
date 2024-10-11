@@ -710,7 +710,6 @@
                         </div>
                         <div class="card-body p-0">
                             <h5>Free delivery</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
                         </div>
                     </div>
                 </div>
@@ -723,7 +722,6 @@
                         </div>
                         <div class="card-body p-0">
                             <h5>100% secure payment</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
                         </div>
                     </div>
                 </div>
@@ -736,7 +734,6 @@
                         </div>
                         <div class="card-body p-0">
                             <h5>Quality guarantee</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
                         </div>
                     </div>
                 </div>
@@ -749,7 +746,6 @@
                         </div>
                         <div class="card-body p-0">
                             <h5>guaranteed savings</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
                         </div>
                     </div>
                 </div>
@@ -762,7 +758,6 @@
                         </div>
                         <div class="card-body p-0">
                             <h5>Daily offers</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
                         </div>
                     </div>
                 </div>
