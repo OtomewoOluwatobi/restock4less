@@ -423,7 +423,6 @@
                             <div class="col-md-9">
                                 <div class="card-body p-0">
                                     <h5 class="text-light">Fresh from farm</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
                                 </div>
                             </div>
                         </div>
@@ -440,7 +439,6 @@
                             <div class="col-md-9">
                                 <div class="card-body p-0">
                                     <h5 class="text-light">100% Organic</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
                                 </div>
                             </div>
                         </div>
@@ -457,7 +455,6 @@
                             <div class="col-md-9">
                                 <div class="card-body p-0">
                                     <h5 class="text-light">Free delivery</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
                                 </div>
                             </div>
                         </div>
