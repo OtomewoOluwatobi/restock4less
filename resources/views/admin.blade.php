@@ -110,12 +110,13 @@
                                         <td>{{ Str::substr($product->description, 0, 35) }} ...</td>
                                         <td class="text-left">
                                             <div class="btn-group" role="group" aria-label="Basic example">
+                                                @if ($product->is_hidden == true )
                                                 <a href="{{ route('products.activate', ['id' => $product->id]) }}"
-                                                    class="btn btn-success"
-                                                    {{ $product->is_hidden ? '' : 'disabled' }}>Activate</a>
+                                                    class="btn btn-success">Activate</a>
+                                                @else
                                                 <a href="{{ route('products.deactivate', ['id' => $product->id]) }}"
-                                                    class="btn btn-warning"
-                                                    {{ $product->is_hidden ? 'disabled' : '' }}>Deactivate</a>
+                                                    class="btn btn-warning">Deactivate</a>
+                                                @endif
                                             </div>
                                             <a href="{{ route('products.edit', ['id' => $product->id]) }}"
                                                 class="btn btn-info">Edit</a>
