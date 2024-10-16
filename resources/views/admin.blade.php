@@ -47,7 +47,7 @@
                             <!-- Image Upload -->
                             <div class="form-group my-2">
                                 <label for="image_url">Image:</label>
-                                <input type="file" class="form-control" id="image_url" name="image_url" required>
+                                <input type="file" class="form-control" id="image_url" name="image_url" {{!empty($product) ? null : 'required'}} >
                                 @if ($errors->has('image_url'))
                                     <span class="error">{{ $errors->first('image_url') }}</span>
                                 @endif
