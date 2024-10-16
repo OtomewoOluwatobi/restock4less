@@ -454,7 +454,7 @@
                             </div>
                             <div class="col-md-9">
                                 <div class="card-body p-0">
-                                    <h5 class="text-light">Free delivery</h5>
+                                    <h5 class="text-light">Swift Delivery</h5>
                                 </div>
                             </div>
                         </div>
