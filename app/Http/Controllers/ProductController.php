@@ -21,7 +21,7 @@ class ProductController extends Controller
 
     public function shop_index()
     {
-        $allProduct = Product::get();
+        $allProduct = Product::where('is_hidden', false)->get();
         return View('shop', compact('allProduct'));
     }
 
